@@ -17,21 +17,21 @@ const Home = (props) => {
     : currentPosts;
 
   //change page
-  const paginate=(pageNumber)=>setCurrentpage(pageNumber)
-
-
-
+  const paginate = (pageNumber) => setCurrentpage(pageNumber);
 
   return (
     <>
-     <div className="cards-wrapper">
-      {filteredData.map((item) => (
-        <Card key={item.id} value={item} />
-      ))}
-    </div>
-   <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>
+      <div className="cards-wrapper">
+        {filteredData.map((item) => (
+          <Card key={item.id} value={item} />
+        ))}
+      </div>
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={data.length}
+        paginate={paginate}
+      />
     </>
-   
   );
 };
 
