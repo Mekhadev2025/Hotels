@@ -1,0 +1,38 @@
+.srchContainer{
+ 
+height: 7rem;
+margin:1rem;
+border-radius: 1.125rem;
+background: #F0F4FB;
+box-shadow: 0px 4px 10px 1px rgba(148, 153, 162, 0.25);
+display:flex;
+align-items:center;
+}
+.searchBar{
+    border-radius: 0.625rem;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 0px 0px rgba(182, 172, 172, 0.42);
+width: 50rem;
+height: 3.75rem;
+margin:1rem;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+ 
+.searchText{
+    border:none;
+    background:none;
+    margin-left:2rem;
+}
+.bi-search{
+    background:none;
+    margin-right:3rem;
+    fill:gray;
+}
+.dd{
+    border:none;
+    background:none;
+    margin-left:2rem;
+}
