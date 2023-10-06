@@ -7,3 +7,19 @@
   column-gap: 8rem;
   margin-bottom: 10rem;
 }
+.showMore{
+  border-radius: 2rem;
+background: #363AE3;
+ color:white;
+ text-align:center;
+width:9.35rem;
+height: 4rem;
+border:none;
+padding:0.4rem;
+ 
+}
+.showCont{
+  display:flex;
+  justify-content:center;
+  margin-bottom: 5rem;
+}

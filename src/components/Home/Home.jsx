@@ -5,7 +5,7 @@ import data from "../../data";
 import Pagination from "../Pagination";
 const Home = (props) => {
   const [currentPage, setCurrentpage] = useState(1);
-  const [postsPerPage] = useState(6);
+  const [postsPerPage,setPostsPerpage] = useState(6);
   const searchValue = props.values;
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -17,8 +17,12 @@ const Home = (props) => {
     : currentPosts;
 
   //change page
-  const paginate = (pageNumber) => setCurrentpage(pageNumber);
-
+  // const paginate = (pageNumber) => setCurrentpage(pageNumber);
+  const showMore=()=>{
+  setPostsPerpage((prev)=>{
+    return prev+6
+  })
+  }
   return (
     <>
       <div className="cards-wrapper">
@@ -26,11 +30,16 @@ const Home = (props) => {
           <Card key={item.id} value={item} />
         ))}
       </div>
-      <Pagination
+      {/* <Pagination
         postsPerPage={postsPerPage}
         totalPosts={data.length}
         paginate={paginate}
-      />
+      /> */}
+
+      <div className="showCont">
+           <button onClick={showMore} className="showMore">Show More</button>
+      </div>
+   
     </>
   );
 };

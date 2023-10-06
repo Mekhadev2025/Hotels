@@ -12,6 +12,7 @@ const SearchBar = (props) => {
 
   const handleCityClick = (city) => {
     setSelected(city);
+    props.handleValue(city);
   };
 
   return (
