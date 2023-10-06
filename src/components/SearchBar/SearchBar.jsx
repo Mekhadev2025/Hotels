@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../SearchBar/SearchBar.css";
 import data from "../../data";
 
@@ -9,39 +9,63 @@ const SearchBar = (props) => {
   // const handleClick = () => {
   //   props.handleValue(value);
   // };
-  
+
   const handleCityClick = (city) => {
     setSelected(city);
     props.handleValue(city);
   };
 
-
-  const handleViewAll=()=>{
-    console.log("heyy")
-    setSelected(null)
-  }
+  const handleViewAll = () => {
+    console.log("heyy");
+    setSelected(null);
+  };
   return (
     <div className="srchContainer">
       <div className="citygroup">
         <button
           className="btn newYork"
           onClick={() => handleCityClick("New York")}
-          style={{ background: selected === "New York" ? "#363AE3" : "#DEE0FA" ,color:selected === "New York" ? "white" : "black" }}
-         
+          style={{
+            background: selected === "New York" ? "#363AE3" : "#DEE0FA",
+            color: selected === "New York" ? "white" : "black",
+          }}
         >
           New York
         </button>
         <button
           className="btn mumbai"
-          style={{ background: selected === "Mumbai" ? "#363AE3" : "#DEE0FA" ,color:selected === "Mumbai" ? "white" : "black"}}
+          style={{
+            background: selected === "Mumbai" ? "#363AE3" : "#DEE0FA",
+            color: selected === "Mumbai" ? "white" : "black",
+          }}
           onClick={() => handleCityClick("Mumbai")}
         >
           Mumbai
         </button>
-        <button className="btn paris" style={{ background: selected === "Paris" ? "#363AE3" : "#DEE0FA" ,color:selected === "Paris" ? "white" : "black"}}  onClick={() => handleCityClick("Paris")}>Paris</button>
-        <button className="btn london" style={{ background: selected === "London" ? "#363AE3" : "#DEE0FA",color:selected === "London" ? "white" : "black" }}  onClick={() => handleCityClick("London")}>London</button>
+        <button
+          className="btn paris"
+          style={{
+            background: selected === "Paris" ? "#363AE3" : "#DEE0FA",
+            color: selected === "Paris" ? "white" : "black",
+          }}
+          onClick={() => handleCityClick("Paris")}
+        >
+          Paris
+        </button>
+        <button
+          className="btn london"
+          style={{
+            background: selected === "London" ? "#363AE3" : "#DEE0FA",
+            color: selected === "London" ? "white" : "black",
+          }}
+          onClick={() => handleCityClick("London")}
+        >
+          London
+        </button>
       </div>
-      <div className="viewAll" onClick={handleViewAll}>View All</div>
+      <div className="viewAll" onClick={handleViewAll}>
+        View All
+      </div>
     </div>
   );
 };
