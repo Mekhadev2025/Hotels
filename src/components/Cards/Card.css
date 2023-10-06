@@ -2,7 +2,7 @@
   width: 40rem;
   height: 50rem;
   border-radius: 1.875rem;
-  background: #FEFEFF;
+  background: #fefeff;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
 }
 .carCard {
@@ -38,36 +38,34 @@
 }
 .prizeContainer {
   display: flex;
-  align-items:flex-end;
- 
+  align-items: flex-end;
+
   background: none;
 }
-.monthPrize{
-    background:none;
-    font-size:1.7rem;
-    color:gray;
+.monthPrize {
+  background: none;
+  font-size: 1.7rem;
+  color: gray;
 }
-.likeBtn{
-    border-radius: 0.375rem;
-background: rgba(141, 195, 243, 0.55);
-width: 3rem;
-height: 3rem;
-margin-left:10rem;
-
+.likeBtn {
+  border-radius: 0.375rem;
+  background: rgba(141, 195, 243, 0.55);
+  width: 3rem;
+  height: 3rem;
+  margin-left: 10rem;
 }
-.rentBtn{
-border-radius: 0.6875rem;
-background: #4899EC;
-width: 10rem;
-height: 3rem;
-border:none;
-margin-left:1rem;
-color:white;
+.rentBtn {
+  border-radius: 0.6875rem;
+  background: #4899ec;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  margin-left: 1rem;
+  color: white;
 }
-.heart{
-  width:2rem;
-  height:2rem;
-  fill:white;
-  background:none;
-
+.heart {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  background: none;
 }
