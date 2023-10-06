@@ -4,7 +4,7 @@ import data from "../../data";
 
 const SearchBar = (props) => {
   // const [value, setValue] = useState(""); // Initialize with an empty string
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState("New York");
 
   // const handleClick = () => {
   //   props.handleValue(value);
