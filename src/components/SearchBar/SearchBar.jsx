@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import "../SearchBar/SearchBar.css";
 import data from "../../data";
 
@@ -9,12 +9,17 @@ const SearchBar = (props) => {
   // const handleClick = () => {
   //   props.handleValue(value);
   // };
-
+  
   const handleCityClick = (city) => {
     setSelected(city);
     props.handleValue(city);
   };
 
+
+  const handleViewAll=()=>{
+    console.log("heyy")
+    setSelected(null)
+  }
   return (
     <div className="srchContainer">
       <div className="citygroup">
@@ -36,7 +41,7 @@ const SearchBar = (props) => {
         <button className="btn paris" style={{ background: selected === "Paris" ? "#363AE3" : "#DEE0FA" ,color:selected === "Paris" ? "white" : "black"}}  onClick={() => handleCityClick("Paris")}>Paris</button>
         <button className="btn london" style={{ background: selected === "London" ? "#363AE3" : "#DEE0FA",color:selected === "London" ? "white" : "black" }}  onClick={() => handleCityClick("London")}>London</button>
       </div>
-      <div className="viewAll">View All</div>
+      <div className="viewAll" onClick={handleViewAll}>View All</div>
     </div>
   );
 };
